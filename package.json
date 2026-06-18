@@ -1,0 +1,24 @@
+{
+  "name": "osrs-stats-discord-bot",
+  "version": "1.0.0",
+  "description": "Discord slash-command bot that renders Old School RuneScape hiscore stats as an image.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node src/start.cjs",
+    "register": "node scripts/register-commands.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=16.14"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "0.1.80",
+    "discord.js": "14.15.3",
+    "dotenv": "16.4.5"
+  },
+  "overrides": {
+    "undici": "5.28.5"
+  },
+  "devDependencies": {}
+}
